@@ -37,7 +37,7 @@ function Header() {
                 <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div className="navbar-nav">
                         <a className="nav-link active" aria-current="page" href="/">Accueil</a>
-                        <a className="nav-link" href="/AboutPage.js">A propos</a>
+                        <a className="nav-link" href="/about">A propos</a>
                     </div>
                 </div>
 
