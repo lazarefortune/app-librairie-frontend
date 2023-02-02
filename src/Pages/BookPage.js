@@ -1,6 +1,7 @@
 import {useParams} from "react-router";
 import {useEffect, useState} from "react";
 import axios from "axios";
+import {Link} from "react-router-dom";
 
 
 const BookPage = () => {
@@ -48,7 +49,7 @@ const BookPage = () => {
                                 </p>
                                 <div className="d-flex justify-content-between align-items-center">
                                     <div className="btn-group">
-                                        <button type="button" className="btn btn-sm btn-outline-success">Consulter</button>
+                                        <Link to={"/"} className="btn btn-sm btn-outline-secondary">Retour</Link>
                                         {book.available ?
                                             <button type="button" className="btn btn-sm btn-outline-success" onClick={handleAvailable}>Emprunter</button>
                                             :
