@@ -11,7 +11,6 @@ const ResultsPage = () => {
     const data = location.state.data;
 
     useEffect(() => {
-        console.log(data)
         setResults(data)
     }
     , [data])

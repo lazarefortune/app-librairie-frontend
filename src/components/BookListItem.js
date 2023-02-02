@@ -7,16 +7,12 @@ const BookListItem = ({ book: bookData }) => {
     const [book, setBook] = useState(bookData)
 
     const handleAvailable = async () => {
-        console.log("handleAvailable")
         const result = await axios.patch("http://localhost:4000/api/books/available/" + book.id + "/0")
-        console.log(result.data)
         setBook(result.data)
     }
 
     const handleUnavailable = async () => {
-        console.log("unavailable")
         const result = await axios.patch("http://localhost:4000/api/books/available/" + book.id + "/1")
-        console.log(result.data)
         setBook(result.data)
     }
 
