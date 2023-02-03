@@ -10,6 +10,8 @@ const ResultsPage = () => {
 
     const data = location.state.data;
 
+    const search = location.state.search;
+
     useEffect(() => {
         setResults(data)
     }
@@ -17,7 +19,7 @@ const ResultsPage = () => {
 
     return (
         <>
-            <h4 className="text-center">Résultats de la recherche</h4>
+            <h4 className="text-center">Résultats de la recherche pour "<strong>{search}</strong>" </h4>
 
             <p>{results.length} résultats</p>
 
