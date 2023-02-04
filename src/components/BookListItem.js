@@ -18,7 +18,7 @@ const BookListItem = ({ book: bookData }) => {
 
     return (
         <div className="col-md-4" key={book.id}>
-            <div className="card mb-4 shadow-sm">
+            <div className="card border-primary mb-3 mb-4 shadow-sm">
                 <div className="card-body">
                     <p className="card-text fw-bold">{book.title}</p>
                     <p className="card-text">
